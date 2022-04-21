@@ -66,9 +66,29 @@ a.next = b;
 b.next = c;
 c.next = d;
 
+// loops
+
 function linkedListValues(head) {
+  // create a current variable and set it to head
+  let current = head;
+  // create an arr variable and assign it to an []
   let arr = [];
-  if (head === null) return;
-  arr.push(head.val);
-  linkedListValues(head.next);
+  // loop through all the nodes
+  while (current !== null) {
+    // push current into the []
+    arr.push(current.val);
+    current = current.next;
+  }
+  return arr;
+  console.log(arr);
+  // return arr
 }
+
+// recursion
+
+// function linkedListValues(head) {
+//   let arr = [];
+//   if (head === null) return;
+//   arr.push(head.val);
+//   linkedListValues(head.next);
+// }
