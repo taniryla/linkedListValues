@@ -94,4 +94,6 @@ const linkedListValues = (head) => {
 
 const fillValues = (head, values) => {
   if (head === null) return;
+  values.push(head.val);
+  fillValues(head.next, values);
 };
