@@ -92,6 +92,7 @@ const linkedListValues = (head) => {
   return values;
 };
 
+// you don't want your recursion to create multiple arrays
 const fillValues = (head, values) => {
   if (head === null) return;
   values.push(head.val);
