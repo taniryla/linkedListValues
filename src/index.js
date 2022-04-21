@@ -30,7 +30,7 @@
 // linked list
 // 11.    Should you introduce some auxiliary element in order to make its use possible?
 // 12. Start with a simple example. Could you restate the problem? Could you restate it still differently?
-console.log(linkedListValues(a));
+// console.log(linkedListValues(a));
 
 // 13. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 // 14. Progress to more complex examples. What is your updated plan here to find a solution?
@@ -68,7 +68,7 @@ c.next = d;
 
 // loops
 
-function linkedListValues(head) {
+const linkedListValues = (head) => {
   // create a current variable and set it to head
   let current = head;
   // create an arr variable and assign it to an []
@@ -82,7 +82,7 @@ function linkedListValues(head) {
   return arr;
   console.log(arr);
   // return arr
-}
+};
 
 // recursion
 
