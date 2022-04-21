@@ -68,7 +68,7 @@ c.next = d;
 
 function linkedListValues(head) {
   let arr = [];
-  while (head !== null) {
-    console.log(head.next);
-  }
+  if (head === null) return;
+  arr.push(head.val);
+  linkedListValues(head.next);
 }
